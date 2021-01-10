@@ -1,0 +1,44 @@
+* {
+  &::after,
+  &::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 87.5%; //this defines what 1rem is - 14/16px = 87,5%
+  line-height: 1.29rem; //18px
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-color: $color-black;
+
+  @include respond(small-device) {
+    font-size: 100%;
+    line-height: 100%;
+  }
+  @include respond(medium-device) {
+    font-size: 110%;
+    line-height: 110%;
+  }
+  @include respond(large-device) {
+    font-size: 120%;
+    line-height: 120%;
+  }
+  @include respond(extra-large-device) {
+    font-size: 130%;
+    line-height: 130%;
+  }
+  @include respond(very-large-desktop-device) {
+    font-size: 140%;
+    line-height: 140%;
+  }
+}
+
+body {
+  color: #C4C4C4;
+  background: #E5E5E5;
+  box-sizing: border-box;
+}

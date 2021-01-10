@@ -6,7 +6,9 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "lint": "eslint src/js"
+    "lint": "eslint src/js",
+    "css": "node-sass src/css/main.scss src/css/style.css -w",
+    "watch:css": "yarn css -- -w"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -25,5 +27,8 @@
     "postcss-nested": "4.2.3",
     "prettier": "^2.2.1",
     "sass": "^1.32.0"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
   }
 }

@@ -1,0 +1,33 @@
+h {
+    font-weight: 900;
+
+    &1 {
+        font-size: 4.57rem; //64px
+        line-height: 5.36rem; //75px
+        color: $color-white;
+        display: block;
+        text-align: center;
+    }
+
+    &2 {
+        font-size: 48px;
+        line-height: 56px;
+        color: #C4C4C4;
+    }
+      
+    &3{
+        font-size: 42px;
+        line-height: 49px;
+        color: #C4C4C4;
+    }
+}
+
+
+.subhead {
+    font-size: 1.29rem; //18px
+    line-height: 1.17rem; //21.09px
+    font-weight: 400;
+    color: $color-white;
+    display: block;
+    text-align: center;
+  }

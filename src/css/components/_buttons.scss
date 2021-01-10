@@ -1,0 +1,21 @@
+.button {
+    &-shop {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 50px;
+        color: $color-white;
+        display: inline-block;
+        border-radius: 5px;
+            &:link, 
+            &:visited {
+                background-color: $button-color-link;
+            }
+            &:hover {
+                background-color: $button-color-hover;
+                box-shadow: 2px 2px 3px rgba($color-black, 0.25)
+            }
+            &:active {
+                background-color: $button-color-active;
+            }
+    }
+}

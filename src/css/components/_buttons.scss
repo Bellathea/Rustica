@@ -1,6 +1,5 @@
 .button {
     &-shop {
-        text-transform: uppercase;
         text-decoration: none;
         padding: 15px 50px;
         color: $color-white;
@@ -17,5 +16,10 @@
             &:active {
                 background-color: $button-color-active;
             }
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 }

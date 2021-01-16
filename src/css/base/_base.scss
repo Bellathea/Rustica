@@ -13,7 +13,7 @@ html {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-color: $color-black;
+  color: $color-black;
 
   @include respond(small-device) {
     font-size: 100%;
@@ -38,7 +38,13 @@ html {
 }
 
 body {
-  color: #C4C4C4;
-  background: #E5E5E5;
+  background: $color-light-grey-2;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
 }

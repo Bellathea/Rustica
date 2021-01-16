@@ -1,0 +1,142 @@
+.info {
+    margin: 10% 5% 10% 5%;
+}
+
+
+.Roesterei {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &Bild {
+        width: 17.21rem;
+
+        &Container {
+            @include respond(small-device) {
+                min-width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &Text {
+        margin-bottom: 3%;
+
+        &Container {
+            display: flex;
+        }
+
+        &KommVorbei {
+            margin-right: 5%;
+        }
+        &TextOeffnung {
+
+        }
+    }
+}
+
+
+.BioFair {
+    display: flex;
+    flex-wrap: wrap;
+
+    &Text {
+
+    }
+    &Bild {
+        width: 17.21rem;
+
+        &Container {
+
+        }
+    }
+}
+
+
+.KaffeeSorten {
+    background-color: $color-black;
+    padding: 4.28rem 1.78rem 2.85rem 1.5rem;
+    &Container {
+        display: flex;
+        align-items: center;
+    }
+
+    &Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &BildContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+
+    &Bild {
+        background-color: $color-white;
+        height: 14.86rem;
+        margin-bottom: 3%;
+    }
+}
+
+
+.icon-shop {
+    width: 1rem;
+    margin-right: 0.4rem;
+    fill: white;
+}
+
+
+.Herkunft {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+    background-image: 
+        linear-gradient(
+            0deg, 
+            rgba($color-black, 0.3), 
+            rgba($color-black, 0.3)
+            ), 
+        url(../images/FEND-Coffee-bags-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 26.78rem;
+    text-align: center;
+
+        &Mehr {
+            margin-top: 8%;
+        }
+}
+
+.inhalte {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+    &-bild {
+       width: 15.28rem; 
+       display: inline;
+    }
+
+    &-icon {
+        
+        &-container {
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-evenly;
+        }
+
+        &-text {
+        margin-top: 4%;
+        margin-left: -1.5%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        }
+    }
+}

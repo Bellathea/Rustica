@@ -17,9 +17,9 @@
       
         &-box {
           position: absolute;
-          left: 10%;
+          left: 7%;
           right: 0.01%;
-          top: 5%;
+          top: 2%;
           bottom: 0.01%;
         }
       }
@@ -33,6 +33,6 @@
     }
 
     &-title {
-        margin-bottom: 50%;
+      color: invert($color: $color-black);
     }
   }

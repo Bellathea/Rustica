@@ -1,4 +1,6 @@
 .button {
+    cursor: pointer;
+
     &-shop {
         text-decoration: none;
         padding: 15px 50px;
@@ -7,19 +9,38 @@
         border-radius: 5px;
             &:link, 
             &:visited {
-                background-color: $button-color-link;
+                background-color: $shop-button-color-link;
             }
             &:hover {
-                background-color: $button-color-hover;
+                background-color: $shop-button-color-hover;
                 box-shadow: 2px 2px 3px rgba($color-black, 0.25)
             }
             &:active {
-                background-color: $button-color-active;
+                background-color: $shop-button-color-active;
             }
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &-produkte {
+        text-decoration: none;
+        padding: 15px 50px;
+        color: $color-white;
+        display: inline-block;
+        border-radius: 5px;
+        border: 3px solid $color-white;
+        background: linear-gradient(to right, $color-white 50%, $color-black 51%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+            &:hover {
+                background-color: $color-white;
+                box-shadow: 2px 2px 3px rgba($color-black, 0.25);
+                background-position: left bottom;
+                color: $color-black;
+            }
+            &:active {
+                background-color: $produkte-button-color-active;
+            }
         text-align: center;
     }
 }

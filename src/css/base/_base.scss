@@ -16,24 +16,24 @@ html {
   color: $color-black;
 
   @include respond(small-device) {
-    font-size: 100%;
-    line-height: 100%;
+    font-size: 1rem;
+    line-height: 1.29rem;
   }
   @include respond(medium-device) {
-    font-size: 110%;
-    line-height: 110%;
+    font-size: 1.18rem;
+    line-height: 1.5rem;
   }
   @include respond(large-device) {
-    font-size: 120%;
-    line-height: 120%;
+    font-size: 1.29rem;
+    line-height: 1.71rem;
   }
   @include respond(extra-large-device) {
-    font-size: 130%;
-    line-height: 130%;
+    font-size: 1.47rem;
+    line-height: 1.95rem;
   }
   @include respond(very-large-desktop-device) {
-    font-size: 140%;
-    line-height: 140%;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 

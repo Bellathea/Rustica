@@ -13,8 +13,15 @@
     
   </head>
   <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    </div>
+
     <header class="header">
-      <div class="header-logo-box"><img src ="icons/logo.svg" alt="Logo" class="header-logo"></div>
+      <div class="header-logo-box">
+        <img class="header-logo" src ="icons/logo.svg" alt="Logo">
+      </div>
   
       <div class="header-text-box">
         <h1 class="header-title">
@@ -24,7 +31,10 @@
       </div>
 
       <a href="#" class="button-shop">zum Shop</a>
+      
     </header>
+
+    
 
     <main>
         <section class="info">
@@ -36,6 +46,7 @@
                 Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen 
                 Café in der Innenstadt.
               </div>
+
               <div class="RoestereiTextContainer">
                 <div class="RoestereiTextKommVorbei">
                   Komm vorbei! <br>
@@ -82,7 +93,7 @@
             <img class="KaffeeSortenBild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Ein Bild der Kaffee-Sorte 
             Costa Rica.">
             <span class="sortenname">Costa Rica</span>
-            <span class="price">6,90€ - 26,90€</span>
+            <span class="KaffeeSortenPreis">6,90€ - 26,90€</span>
 
             <div class="KaffeSortenIconsContainer">
               <img class="icon-shop" src="icons/coffee-beans.svg" alt="Kaffeebohnen">
@@ -95,7 +106,7 @@
             <img class="KaffeeSortenBild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Ein Bild der Kaffee-Sorte 
             Costa Rica.">
             <span class="sortenname">Costa Rica</span>
-            <span class="price">6,90€ - 26,90€</span>
+            <span class="KaffeeSortenPreis">6,90€ - 26,90€</span>
 
             <div class="KaffeSortenIconsContainer">
               <img class="icon-shop" src="icons/coffee-beans.svg" alt="Kaffeebohnen">
@@ -108,7 +119,7 @@
             <img class="KaffeeSortenBild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Ein Bild der Kaffee-Sorte 
             Costa Rica.">
             <span class="sortenname">Costa Rica</span>
-            <span class="price">6,90€ - 26,90€</span>
+            <span class="KaffeeSortenPreis">6,90€ - 26,90€</span>
 
             <div class="KaffeSortenIconsContainer">
               <img class="icon-shop" src="icons/coffee-beans.svg" alt="Kaffeebohnen">
@@ -121,7 +132,7 @@
             <img class="KaffeeSortenBild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Ein Bild der Kaffee-Sorte 
             Costa Rica.">
             <span class="sortenname">Costa Rica</span>
-            <span class="price">6,90€ - 26,90€</span>
+            <span class="KaffeeSortenPreis">6,90€ - 26,90€</span>
 
             <div class="KaffeSortenIconsContainer">
               <img class="icon-shop" src="icons/coffee-beans.svg" alt="Kaffeebohnen">
@@ -129,6 +140,10 @@
               <img class="icon-shop" src="icons/coffee-shovel.svg" alt="Kaffeeschaufel">
             </div>
           </div>
+        </div>
+
+        <div class="button-produkte-container">
+          <a href="#" class="button-produkte">alle Produkte</a>
         </div>
       </section>
 
@@ -149,12 +164,13 @@
       </section>
 
       <section class="inhalte">
-        <h2 class="inhalte-heading">
-          Das steckt drin
-        </h2>
+        <div class="inhalte-container1">
+          <h2 class="inhalte-heading">
+            Das steckt drin
+          </h2>
 
-        <img class="inhalte-bild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Kaffeesorte Costa Rica">
-      </section>
+          <img class="inhalte-bild" src="images/FEND_Coffee_Costa-Rica 2.svg" alt="Kaffeesorte Costa Rica">
+        </div>
 
         <div class="inhalte-icon-container">
           <img class="inhalte-icon" src="icons/coffee-cup-3.svg" alt="Icon Kaffeetasse">
@@ -163,15 +179,78 @@
         </div>
 
         <div class="inhalte-icon-text">
-          <span>Bester</br>Geschmack</span>
-          <span>Fair</br>gehandelt</span>
-          <span>Bio</br>Qualität</span>
+          <span>
+            Bester</br>
+            Geschmack
+          </span>
+
+          <span>
+            Fair</br>
+            gehandelt
+          </span>
+
+          <span>
+            Bio</br>
+            Qualität
+          </span>
         </div>
-      
+
+        <div class="inhalte-button">
+          <a href="#" class="button-shop">zum Shop</a>
+        </div>
+      </section>
+
+      <section class="karte">
+          <h2 class="karte-heading">
+            Komm vorbei
+          </h2>
+
+          <iframe class="karte-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.8557037827613!2d10.119832115403279!3d54.34185850737822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1610801992230!5m2!1sde!2sde" 
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
+      </section>
     </main>
 
 
     <footer class="footer">
+        <div class="footer-logo-box">
+          <img class="footer-logo" src ="icons/logo.svg" alt="Logo">
+        </div>
+
+        <div class="footer-heading-container">
+          <h3 class="footer-heading">
+            Rustica
+          </h3>
+
+          <span class="footer-subhead">
+            Café & Rösterei
+          </span>
+      </div>
+
+      <div class="footer-info">
+        <span class="footer-info-box">
+          Komm uns besuchen!<br>
+          Fraunhoferstr. 13, Kiel
+        </span>
+
+        <span class="footer-info-box">
+          Mo – Fr 8–18 Uhr<br>
+          Sa 11–18 Uhr
+        </span>
+      </div>
+
+      <div class="footer-info">
+        <span class="footer-info-box">
+          Impressum<br>
+          Datenschutz
+        </span>
+
+        <span class="footer-info-box">
+          Café<br>
+          Shop<br>
+          Herkunft
+        </span>
+      </div>
 
     </footer>
 

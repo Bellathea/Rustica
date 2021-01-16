@@ -4,24 +4,22 @@
 
 
 .Roesterei {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-bottom: 10%;
 
     &Bild {
         width: 17.21rem;
+        display: inline;
 
         &Container {
-            @include respond(small-device) {
-                min-width: 100%;
-                display: flex;
-                justify-content: flex-end;
-            }
+            margin-top: 2.86rem;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 
     &Text {
         margin-bottom: 3%;
+        width: 23.36rem;
 
         &Container {
             display: flex;
@@ -30,6 +28,7 @@
         &KommVorbei {
             margin-right: 5%;
         }
+
         &TextOeffnung {
 
         }
@@ -38,17 +37,17 @@
 
 
 .BioFair {
-    display: flex;
-    flex-wrap: wrap;
 
     &Text {
-
+        width: 23.36rem;
     }
+
     &Bild {
         width: 17.21rem;
 
         &Container {
-
+            margin-top: 2.86rem;
+            display: flex;
         }
     }
 }
@@ -56,16 +55,12 @@
 
 .KaffeeSorten {
     background-color: $color-black;
-    padding: 4.28rem 1.78rem 2.85rem 1.5rem;
-    &Container {
-        display: flex;
-        align-items: center;
-    }
+    padding: 4.28rem 0 2.85rem 1.5rem;
 
     &Container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     &BildContainer {
@@ -77,18 +72,27 @@
 
     &Bild {
         background-color: $color-white;
-        height: 14.86rem;
+        width: 12rem;
         margin-bottom: 3%;
+    }
+
+    &Preis {
+        color: $color-medium-grey;
+        margin-top: 3%;
     }
 }
 
-
 .icon-shop {
     width: 1rem;
-    margin-right: 0.4rem;
-    fill: white;
+    margin: 0.5rem 0.4rem 2rem 0;
+    filter: invert(1);
+    
 }
 
+.button-produkte-container {
+    display: flex;
+    justify-content: center;
+}
 
 .Herkunft {
     display: flex;
@@ -114,9 +118,12 @@
 }
 
 .inhalte {
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
+   
+    &-container1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
 
     &-bild {
        width: 15.28rem; 
@@ -139,4 +146,22 @@
         text-align: center;
         }
     }
+
+    &-button {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.karte {
+    &-heading {
+        margin: 15% 0 2.5rem 1.71rem;
+    }
+
+    &-google {
+        width: 100%;
+        height: 16.5rem;
+    }
+    
 }

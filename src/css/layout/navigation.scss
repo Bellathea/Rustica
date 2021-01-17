@@ -1,11 +1,28 @@
 .navigation {
+    visibility: hidden;
+    position: fixed;
 
     @include respond(large-device) {
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.29rem;
 
+    &-link {
+        margin-right: 4.71rem;
+
+        &:active {
+            text-decoration: none;
+        }
+
+        &-text {
+            text-decoration: underline;
+        }
+    }
     }
 
 
-    
     /* idee fuer mobile
     &__checkbox {
         display: none;

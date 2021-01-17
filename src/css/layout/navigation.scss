@@ -3,23 +3,24 @@
     position: fixed;
 
     @include respond(large-device) {
-    visibility: visible;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.29rem;
+        visibility: visible;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.29rem;
 
-    &-link {
-        margin-right: 4.71rem;
+        &-link {
+            margin-right: 4.71rem;
 
-        &:active {
-            text-decoration: none;
+            &:active {
+                text-decoration: none;
+            }
+
+            &-text {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
-
-        &-text {
-            text-decoration: underline;
-        }
-    }
     }
 
 

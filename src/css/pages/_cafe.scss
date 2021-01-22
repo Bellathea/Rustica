@@ -1,0 +1,21 @@
+.gebaeck {
+    margin: 10% 5% 10% 5%;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &-bild {
+        width: 11.14rem;
+        height: 8.36rem;
+        margin-bottom: 2%;
+
+        &-vertikal {
+            width: 11.14rem;
+            height: 14.29rem;
+            margin-bottom: 2%;
+        }
+    }
+}

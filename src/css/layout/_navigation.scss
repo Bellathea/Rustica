@@ -1,5 +1,5 @@
 .navigation {
-    visibility: hidden;
+    display: none;
     position: fixed;
 
     @include respond(large-device) {

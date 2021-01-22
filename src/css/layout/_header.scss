@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75vh; // 75% of the viewport height
+    background-image: 
+        linear-gradient(
+            0deg, 
+            rgba($color-black, 0.3), 
+            rgba($color-black, 0.3)
+            ), 
+        url(../images/FEND-Coffee-latte-art-3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include respond(large-device) {
+      height: 50vh;
+    }
+
+    &-logo {
+        height: 35px;
+        filter: invert(1);
+      
+        &-box {
+          position: fixed;
+          top: 1.29rem;
+          left: 5%;
+          z-index: 1000;
+        }
+      }
+
+    &-title {
+      color: invert($color: $color-black);
+    }
+
+    &-cafe {
+      height: 50vh; // 50% of the viewport height
+      background-image: 
+        linear-gradient(
+            0deg, 
+            rgba($color-black, 0.3), 
+            rgba($color-black, 0.3)
+            ), 
+        url(../images/FEND-Coffee-shop.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &-herkunft {
+      height: 50vh; // 50% of the viewport height
+      background-image: 
+        linear-gradient(
+            0deg, 
+            rgba($color-black, 0.3), 
+            rgba($color-black, 0.3)
+            ), 
+        url(../images/FEND-Coffee-beans-hand-2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }

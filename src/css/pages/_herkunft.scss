@@ -1,0 +1,60 @@
+.ursprung {
+    margin: 10% 5% 10% 5%;
+    width: 100%;
+
+    &-text {
+        width: 23.36rem;
+    }
+
+    &-video {
+        margin-top: 10%;
+        border: none;
+
+        &-container {
+           
+        }
+    }
+}
+
+.anbaugebiete {
+    margin: 10% 5% 10% 5%;
+
+    &-text {
+        width: 23.36rem;
+    }
+
+    &-bild {
+        width: 17.21rem;
+
+        @include respond(medium-device) {
+            margin-right: 5rem;
+        }
+
+        @include respond(large-device) {
+            margin-left: 7rem;
+        }
+
+        &-container {
+            margin-top: 2.86rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.kaffeebauern {
+    margin: 10% 5% 10% 5%;
+
+    &-text {
+        width: 23.36rem;
+    }
+
+    &-bild {
+        width: 17.21rem;
+
+        &-container {
+            margin-top: 2.86rem;
+            display: flex;
+        }
+    }
+}

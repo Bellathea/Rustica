@@ -217,7 +217,7 @@
 
 
 .karte {
-    
+
     &-heading {
         margin: 15% 0 2.5rem 1.71rem;
     }
@@ -225,5 +225,6 @@
     &-google {
         width: 100%;
         height: 16.5rem;
+        display: block;
     }
 }

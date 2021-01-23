@@ -8,21 +8,35 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 1.29rem;
+        max-width: 100%;
 
         &-link {
-            margin-right: 4.71rem;
-
-            &:active {
-                text-decoration: none;
-            }
+            margin-right: 4.71rem;             
 
             &-text {
-                text-decoration: underline;
-                cursor: pointer;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $color-white;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    &:before {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
-
 
     /* idee fuer mobile
     &__checkbox {

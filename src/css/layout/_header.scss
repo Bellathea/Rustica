@@ -15,7 +15,7 @@
     background-position: center;
 
     @include respond(large-device) {
-      height: 50vh;
+      height: 65vh;
     }
 
     &-logo {
@@ -58,5 +58,10 @@
         url(../images/FEND-Coffee-beans-hand-2.jpg);
       background-size: cover;
       background-position: center;
+    }
+
+    &-impressum {
+      height: 50vh;
+      background-image: none;
     }
   }

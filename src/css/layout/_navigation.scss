@@ -16,6 +16,10 @@
             &-text {
                 position: relative;
 
+                &:active {
+                    text-decoration: underline;
+                }
+
                 &:before {
                     content: "";
                     position: absolute;
@@ -33,6 +37,10 @@
                         visibility: visible;
                         width: 100%;
                     }
+                }
+
+                &-active {
+                    text-decoration: underline;
                 }
             }
         }

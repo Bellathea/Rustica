@@ -3,19 +3,71 @@
 }
 
 .galerie {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 10% 5% 10% 5%;
 
-    &-bild {
-        width: 11.14rem;
-        height: 8.36rem;
-        margin-bottom: 2%;
+    &-m {
+        width: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        
+        grid-template-areas:
+            "danish latteart2"
+            "machine latteart2"
+            "machine breakfast"
+            "machine breakfast"
+            "latteart breakfast"
+            "latteart breakfast"
+            "latteart liste"
+            "latteart liste"
+            "sign liste"
+            "sign latteart3";
 
-        &-vertikal {
-            width: 11.14rem;
-            height: 14.29rem;
-            margin-bottom: 2%;
+        @include respond(large-device) {
+            display: none;
         }
+
+        & > * {
+            width: 100%;
+        }
+    }
+
+    &-d {
+        display: none;
+        
+        @include respond(large-device) {
+            
+        }
+    }
+
+    &-danish {
+        grid-area: danish;
+    }
+
+    &-machine {
+        grid-area: machine;
+    }
+
+    &-breakfast1 {
+        grid-area: breakfast;
+    }
+
+    &-list {
+        grid-area: liste;
+    }
+
+    &-sign {
+        grid-area: sign;
+    }
+
+    &-latteart1 {
+        grid-area: latteart;
+    }
+
+    &-latteart2 {
+        grid-area: latteart2;
+    }
+
+    &-latteart3 {
+        grid-area: latteart3;
     }
 }

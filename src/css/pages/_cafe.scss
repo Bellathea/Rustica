@@ -1,5 +1,18 @@
 .gebaeck {
     margin: 10% 5% 10% 5%;
+
+    @include respond(large-device) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    &-text {
+        @include respond(large-device) {
+            width: 50vw;
+        }
+    }
+
 }
 
 .galerie {
@@ -35,7 +48,19 @@
         display: none;
         
         @include respond(large-device) {
-            
+            width: 100%;
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas:
+            "danish latteart2 machine liste"
+            "danish latteart2 latteart liste"
+            "sign latteart2 latteart liste"
+            "sign latteart3 latteart breakfast";
+
+            & > * {
+                width: 100%;
+            }
         }
     }
 

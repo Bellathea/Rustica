@@ -1,19 +1,27 @@
 .ursprung {
     margin: 10% 5% 10% 5%;
-    width: 100%;
-
+    
     @include respond(large-device) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    &-container {
+
+    }
+
+
     &-text {
-        width: 23.36rem;
+        width: 30rem;
+
+        @include respond(large-device) {
+            
+        }
     }
 
     &-video {
-        width: 90%;
+        width: 90vw;
         margin-top: 4rem;
 
         &-container {

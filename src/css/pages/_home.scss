@@ -16,11 +16,11 @@
         
 
         @include respond(medium-device) {
-            margin-right: 5rem;
+            margin-right: 3rem;
         }
 
         @include respond(large-device) {
-            margin-left: 7rem;
+            margin-left: 5rem;
         }
 
         &Container {
@@ -160,7 +160,15 @@
 
         &-2 {
             @include respond(large-device) {
+                height: 20rem;
                 display: flex;
+            }
+        }
+
+        &-3 {
+            @include respond(large-device) {
+                display: flex;
+                flex-direction: column;
                 justify-content: space-evenly;
             }
         }
@@ -171,7 +179,7 @@
 
        @include respond(large-device) {
         width: 20rem;
-    }
+        }
     }
 
     &-icon {
@@ -210,7 +218,6 @@
 
     &-button {
         margin-top: 10%;
-        display: flex;
-        justify-content: center;
+        
     }
 }

@@ -61,7 +61,12 @@
     }
 
     &-impressum {
-      height: 50vh;
+      height: 20vh;
+      background-image: none;
+    }
+
+    &-contact {
+      height: 20vh;
       background-image: none;
     }
   }

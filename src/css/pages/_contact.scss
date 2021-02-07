@@ -1,0 +1,51 @@
+.kontakt {
+    margin: 10% 5% 10% 5%;
+
+    &-formular {
+       
+        
+        width: 100%;
+
+        &-box {
+            margin-top: 10%;
+        }
+
+        &-label {
+            
+        }
+
+        &-input {
+            margin-top: 1%;
+            padding: 5% 0 1% 5%;
+            width: 95%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid $color-black;
+            outline: none;
+
+            &:hover {
+                background-color: $color-light-grey;
+            }
+        }
+
+        &-text {
+            padding: 18% 0 0 5%;
+            font-family: inherit;
+            width: 95%;
+            height: 20vh;
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid $color-black;
+
+            &:hover {
+                background-color: $color-light-grey;
+            }
+        }
+
+        &-button {
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

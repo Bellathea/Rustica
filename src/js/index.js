@@ -1,7 +1,10 @@
-import myFunction, { multiply } from "./myModule";
+const navigationBar = document.querySelectorAll(".navigation-link-text");
+const navigationBarLinkCafe = navigationBar[0];
+const navigationBarLinkHerkunft = navigationBar[1];
+const navigationBarLinkShop = navigationBar[2];
 
-myFunction();
+const toggleNavigationColor = () => {
+    navigationBarLinkCafe.classList.add('navigation-link-text-black');
+};
 
-const result = multiply(2, 5);
-
-console.log(result);
+toggleNavigationColor();

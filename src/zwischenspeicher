@@ -1,0 +1,58 @@
+Alte Navigation
+
+<div class="navigation">
+        <div class="navigation-link">
+          <a href="cafe/cafe.html" class="navigation-link-text">
+            das Café
+          </a>
+        </div>
+
+        <div class="navigation-link">
+          <a href="herkunft/herkunft.html" class="navigation-link-text">
+            Herkunft
+          </a>
+        </div>
+
+        <div class="navigation-link">
+          <a href="#" class="navigation-link-text">
+            Shop
+          </a>
+        </div>
+
+      <!-- idee fuer mobile
+
+      <input type="checkbox" class="mnavigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="mnavigation__button">
+        <span class="mnavigation__icon">
+          &nbsp;
+        </span>
+      </label>
+
+      <div class="mnavigation__background">
+        &nbsp;
+      </div>
+
+      <nav class="mnavigation__nav">
+        <ul class="mnavigation__list">
+          <li class="mnavigation__item">
+            <a href="#" class="mnavigation__link">
+              das Café
+            </a>
+          </li>
+
+          <li class="mnavigation__item">
+            <a href="#" class="mnavigation__link">
+              Herkunft
+            </a>
+          </li>
+
+          <li class="mnavigation__item">
+            <a href="#" class="mnavigation__link">
+              Shop
+            </a>
+          </li>
+        </ul>
+      </nav> !-->
+
+    </div>

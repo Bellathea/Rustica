@@ -1,5 +1,5 @@
 .navigation {
-    display: none;
+    visibility: hidden;
     position: fixed;
 
     @include respond(large-device) {
@@ -11,10 +11,41 @@
         max-width: 100%;
 
         &-link {
-            margin-right: 4.71rem;             
+            margin-right: 4.71rem;
+            display: flex;
+            list-style-type: none;       
 
             &-text {
                 position: relative;
+                margin-left: 2.5rem;
+                
+                &-black {
+                    position: relative;
+                    color: $color-black;
+
+                    &:active {
+                        text-decoration: underline;
+                    }
+    
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $color-black;
+                        visibility: hidden;
+                        transition: all 0.3s ease-in-out;
+                    }
+    
+                    &:hover {
+                        &:before {
+                            visibility: visible;
+                            width: 100%;
+                        }
+                    }
+                }
 
                 &:active {
                     text-decoration: underline;

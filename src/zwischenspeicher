@@ -1,23 +1,4 @@
-Alte Navigation
-
-<div class="navigation">
-        <div class="navigation-link">
-          <a href="cafe/cafe.html" class="navigation-link-text">
-            das Café
-          </a>
-        </div>
-
-        <div class="navigation-link">
-          <a href="herkunft/herkunft.html" class="navigation-link-text">
-            Herkunft
-          </a>
-        </div>
-
-        <div class="navigation-link">
-          <a href="#" class="navigation-link-text">
-            Shop
-          </a>
-        </div>
+Navigation
 
       <!-- idee fuer mobile
 

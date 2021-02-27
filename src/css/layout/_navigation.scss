@@ -1,4 +1,5 @@
 .navigation {
+    z-index: 1000;
     visibility: hidden;
     position: fixed;
 
@@ -7,14 +8,22 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-top: 1.29rem;
+        margin-top: 0.4rem;
         max-width: 100%;
+
+        &-shoppingcart {
+            filter: invert(1);
+
+            &-black {
+                filter: none;
+            }
+        }
 
         &-link {
             margin-right: 4.71rem;
             display: flex;
             list-style-type: none;       
-
+            
             &-text {
                 position: relative;
                 margin-left: 2.5rem;
@@ -22,6 +31,7 @@
                 &-black {
                     position: relative;
                     color: $color-black;
+                    margin-left: 2.5rem;
 
                     &:active {
                         text-decoration: underline;
@@ -74,6 +84,12 @@
                     text-decoration: underline;
                 }
             }
+        }
+    }
+
+    &-mobile {
+        @include respond(large-device) {
+            display: none;
         }
     }
 }

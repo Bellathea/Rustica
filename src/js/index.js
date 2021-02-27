@@ -1,3 +1,4 @@
+// Navbar change styles for scrolling function
 const navigationBar = document.querySelectorAll(".navigation-link-text");
 const navigationBarLinkCafe = navigationBar[0];
 const navigationBarLinkHerkunft = navigationBar[1];
@@ -5,8 +6,6 @@ const navigationBarLinkShop = navigationBar[2];
 const navigationBarShoppingCart = navigationBar [3];
 const navigationBarShoppingCartIcon = document.querySelector(".navigation-shoppingcart");;
 
-
-// Navbar change styles for scrolling function
 const changeNavigationColorBlack = () => {
   navigationBarLinkCafe.classList.remove("navigation-link-text");
   navigationBarLinkCafe.classList.add("navigation-link-text-black");
@@ -34,13 +33,12 @@ const changeNavigationColorWhite = () => {
   navigationBarShoppingCartIcon.classList.remove("navigation-shoppingcart-black");
 };
 
+//change NavBar by Scrolling
 const headerSection = document.querySelector(".header");
-
 const infoObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       changeNavigationColorWhite();
-      console.log("entry is intersecting");
     } else {
         changeNavigationColorBlack();
     }
@@ -48,3 +46,31 @@ const infoObserver = new IntersectionObserver((entries, observer) => {
 });
 
 infoObserver.observe(headerSection);
+
+//Display mobile Menu by clicking the burger icon
+const navigationMobileIconBurger = document.querySelector(".navigation-mobile-icon-burger");
+const navigationMobileIconClose = document.querySelector(".navigation-mobile-icon-close");
+const mobileNavigationBackground = document.querySelector(".navigation-mobile");
+const mobileNavigationList = document.querySelector(".navigation-mobile-list");
+const documentBody = document.body;
+
+const openMobileNavigation = () => {
+    console.log(documentBody);
+    documentBody.style.overflow = "hidden";
+    mobileNavigationList.style.visibility = "visible";
+    mobileNavigationBackground.style.visibility = "visible";
+    navigationMobileIconBurger.style.visibility = "hidden";
+    navigationMobileIconClose.style.visibility = "visible";
+};
+
+const closeMobileNavigation = () => {
+    documentBody.style.overflow = "visible";
+    mobileNavigationList.style.visibility = "hidden";
+    mobileNavigationBackground.style.visibility = "hidden";
+    navigationMobileIconBurger.style.visibility = "visible";
+    navigationMobileIconClose.style.visibility = "hidden";
+
+}
+
+navigationMobileIconBurger.addEventListener('click', openMobileNavigation);
+navigationMobileIconClose.addEventListener('click', closeMobileNavigation);
